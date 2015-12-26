@@ -4,4 +4,4 @@ main = do
   bs<-mapM (const getLine) [1..n]
   putStrLn (concat (drop 1 (words as)))
 
---IO problems, const skapar en konstant funktion, mapM; map och sequence
+-- const skapar en konstant funktion, mapM; map och sequence
