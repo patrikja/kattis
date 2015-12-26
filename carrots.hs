@@ -1,6 +1,7 @@
 main = do
   as<-getLine
-  bs<-mapM readLn [1..(head (words as))]
+  let n=read (head (words as))
+  bs<-mapM (const getLine) [1..n]
   putStrLn (concat (drop 1 (words as)))
 
---IO problems
+--IO problems, const skapar en konstant funktion, mapM; map och sequence
