@@ -2,8 +2,9 @@ import Data.Char
 main = do
   n<-readLn
   as<-mapM (const getLine) [1..n]
-  mapM putStrLn (sol as)
+  mapM_ putStrLn (sol as)
 --får en skum sista rad, men de iggade den på kattis så det var ju lurre
+--read about this problem in http://learnyouahaskell.com/input-and-output, so I use the mapM_ function instead of mapM
   
 sol::[String]->[String]
 sol []=[]
