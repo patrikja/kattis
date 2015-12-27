@@ -1,2 +1,2 @@
 # kattis
-Some haskell solutions to haskell problems
+Some Haskell solutions to Haskell problems
